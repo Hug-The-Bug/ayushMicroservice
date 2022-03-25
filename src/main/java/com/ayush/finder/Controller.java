@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.configurationprocessor.json.JSONException;
 import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -59,7 +60,7 @@ public class Controller {
 	}
 	
 	@GetMapping("/getAllInfoToSend/{start_longitude}/{start_latitude}")
-	
+	@CrossOrigin
 	public List<InformationToSend> getAllInfoToSend(@PathVariable double start_longitude , @PathVariable double start_latitude){
 		
 //		77.376184, 28.594191
