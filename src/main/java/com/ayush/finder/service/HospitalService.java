@@ -62,7 +62,7 @@ public class HospitalService {
 			info.setPhone_No(hospitalInfo.get(i).getPhone_no());
 			info.setAddress(hospitalInfo.get(i).getAddress());
 			info.setWebsite_link(hospitalInfo.get(i).getWebsite_link());
-			
+			info.setImage(hospitalInfo.get(i).getImage());
 			info.setServices(getListOfService(hospitalInfo.get(i).getHospital_accredation_no()));
 			
 			double distance= (double)distance_find_service.getDistance(start_longitude, start_latitude, hospitalInfo.get(i).getLongitude(), hospitalInfo.get(i).getLatitude());

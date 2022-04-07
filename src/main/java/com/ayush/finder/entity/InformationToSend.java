@@ -10,6 +10,7 @@ public class InformationToSend {
 	private String phone_No;
 	private String address;
 	private String website_link;
+	private String image;
 	private double distance;
 	private List<String> services;
 	
@@ -18,8 +19,21 @@ public class InformationToSend {
 		
 	}
 	
+//	public InformationToSend(String hospital_name, String open_time, String close_time, String phone_No, String address,
+//			String website_link, double distance, List<String> services) {
+//		super();
+//		this.hospital_name = hospital_name;
+//		this.open_time = open_time;
+//		this.close_time = close_time;
+//		this.phone_No = phone_No;
+//		this.address = address;
+//		this.website_link = website_link;
+//		this.distance = distance;
+//		this.services = services;
+//	}
+
 	public InformationToSend(String hospital_name, String open_time, String close_time, String phone_No, String address,
-			String website_link, double distance, List<String> services) {
+			String website_link, String image, double distance, List<String> services) {
 		super();
 		this.hospital_name = hospital_name;
 		this.open_time = open_time;
@@ -27,6 +41,7 @@ public class InformationToSend {
 		this.phone_No = phone_No;
 		this.address = address;
 		this.website_link = website_link;
+		this.image = image;
 		this.distance = distance;
 		this.services = services;
 	}
@@ -93,6 +108,14 @@ public class InformationToSend {
 
 	public void setServices(List<String> services) {
 		this.services = services;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
 	}
     
 	
