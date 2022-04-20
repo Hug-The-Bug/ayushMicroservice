@@ -79,4 +79,16 @@ public class Controller {
 //    	 return hospitalService.getAllInfoToSend(start_longitude, start_latitude);
 //     }
 	
+	
+	
+	@GetMapping("/search")
+	public void search(@RequestParam String querry) {
+		
+		
+		
+		
+	}
+	
+	
+	
 }
